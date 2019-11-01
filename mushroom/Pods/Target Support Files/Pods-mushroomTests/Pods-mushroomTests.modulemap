@@ -1,0 +1,6 @@
+framework module Pods_mushroomTests {
+  umbrella header "Pods-mushroomTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16C70D9D7CE0251D65385924 /* Pods_mushroomUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0374BE8DFC7F687CE012337 /* Pods_mushroomUITests.framework */; };
+		9F8C201ECE0D06FA85B1B6C4 /* Pods_mushroomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FB9DA9A2D2C1D01A3350E6 /* Pods_mushroomTests.framework */; };
+		E528CA338C4B57CCA70C680D /* Pods_mushroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40A356F32847F80820E9EEC /* Pods_mushroom.framework */; };
+		E94EEF71234EFDC200756049 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94EEF70234EFDC200756049 /* Alamofire.framework */; };
+		E94EEF72234EFDC200756049 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E94EEF70234EFDC200756049 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E94EEF75234EFDEE00756049 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94EEF74234EFDEE00756049 /* SwiftyJSON.framework */; };
+		E94EEF76234EFDEE00756049 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E94EEF74234EFDEE00756049 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E99467FC23320A1400CDCE11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99467FB23320A1400CDCE11 /* AppDelegate.swift */; };
+		E99467FE23320A1400CDCE11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99467FD23320A1400CDCE11 /* ViewController.swift */; };
+		E994680123320A1400CDCE11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99467FF23320A1400CDCE11 /* Main.storyboard */; };
+		E994680323320A1500CDCE11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E994680223320A1500CDCE11 /* Assets.xcassets */; };
+		E994680623320A1500CDCE11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E994680423320A1500CDCE11 /* LaunchScreen.storyboard */; };
+		E994681123320A1500CDCE11 /* mushroomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994681023320A1500CDCE11 /* mushroomTests.swift */; };
+		E994681C23320A1500CDCE11 /* mushroomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994681B23320A1500CDCE11 /* mushroomUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E994680D23320A1500CDCE11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E99467F023320A1400CDCE11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E99467F723320A1400CDCE11;
+			remoteInfo = mushroom;
+		};
+		E994681823320A1500CDCE11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E99467F023320A1400CDCE11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E99467F723320A1400CDCE11;
+			remoteInfo = mushroom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E94EEF73234EFDC200756049 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E94EEF76234EFDEE00756049 /* SwiftyJSON.framework in Embed Frameworks */,
+				E94EEF72234EFDC200756049 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0050D2ED064C5D208BA7572F /* Pods-mushroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mushroom.release.xcconfig"; path = "Target Support Files/Pods-mushroom/Pods-mushroom.release.xcconfig"; sourceTree = "<group>"; };
+		06E718DAB6588929622674DF /* Pods-mushroomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mushroomTests.release.xcconfig"; path = "Target Support Files/Pods-mushroomTests/Pods-mushroomTests.release.xcconfig"; sourceTree = "<group>"; };
+		1DDC156DFC7014ACAFD59A9F /* Pods-mushroomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mushroomTests.debug.xcconfig"; path = "Target Support Files/Pods-mushroomTests/Pods-mushroomTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56714B33621FE1FA1602C404 /* Pods-mushroomUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mushroomUITests.debug.xcconfig"; path = "Target Support Files/Pods-mushroomUITests/Pods-mushroomUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84FB9DA9A2D2C1D01A3350E6 /* Pods_mushroomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mushroomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF66138C93EBE68ABE3AE4A /* Pods-mushroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mushroom.debug.xcconfig"; path = "Target Support Files/Pods-mushroom/Pods-mushroom.debug.xcconfig"; sourceTree = "<group>"; };
+		C40A356F32847F80820E9EEC /* Pods_mushroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mushroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0A33DDC4482B75ED0BD40A /* Pods-mushroomUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mushroomUITests.release.xcconfig"; path = "Target Support Files/Pods-mushroomUITests/Pods-mushroomUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E0374BE8DFC7F687CE012337 /* Pods_mushroomUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mushroomUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E94EEF70234EFDC200756049 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E94EEF74234EFDEE00756049 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99467F823320A1400CDCE11 /* mushroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mushroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99467FB23320A1400CDCE11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E99467FD23320A1400CDCE11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E994680023320A1400CDCE11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E994680223320A1500CDCE11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E994680523320A1500CDCE11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E994680723320A1500CDCE11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E994680C23320A1500CDCE11 /* mushroomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mushroomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E994681023320A1500CDCE11 /* mushroomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mushroomTests.swift; sourceTree = "<group>"; };
+		E994681223320A1500CDCE11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E994681723320A1500CDCE11 /* mushroomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mushroomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E994681B23320A1500CDCE11 /* mushroomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mushroomUITests.swift; sourceTree = "<group>"; };
+		E994681D23320A1500CDCE11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E99467F523320A1400CDCE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E528CA338C4B57CCA70C680D /* Pods_mushroom.framework in Frameworks */,
+				E94EEF71234EFDC200756049 /* Alamofire.framework in Frameworks */,
+				E94EEF75234EFDEE00756049 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E994680923320A1500CDCE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8C201ECE0D06FA85B1B6C4 /* Pods_mushroomTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E994681423320A1500CDCE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C70D9D7CE0251D65385924 /* Pods_mushroomUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		514C50D8BA57330EA070EE71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCF66138C93EBE68ABE3AE4A /* Pods-mushroom.debug.xcconfig */,
+				0050D2ED064C5D208BA7572F /* Pods-mushroom.release.xcconfig */,
+				1DDC156DFC7014ACAFD59A9F /* Pods-mushroomTests.debug.xcconfig */,
+				06E718DAB6588929622674DF /* Pods-mushroomTests.release.xcconfig */,
+				56714B33621FE1FA1602C404 /* Pods-mushroomUITests.debug.xcconfig */,
+				DA0A33DDC4482B75ED0BD40A /* Pods-mushroomUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		534B414DEDD3A07D1049A0F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E94EEF74234EFDEE00756049 /* SwiftyJSON.framework */,
+				E94EEF70234EFDC200756049 /* Alamofire.framework */,
+				C40A356F32847F80820E9EEC /* Pods_mushroom.framework */,
+				84FB9DA9A2D2C1D01A3350E6 /* Pods_mushroomTests.framework */,
+				E0374BE8DFC7F687CE012337 /* Pods_mushroomUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E99467EF23320A1400CDCE11 = {
+			isa = PBXGroup;
+			children = (
+				E99467FA23320A1400CDCE11 /* mushroom */,
+				E994680F23320A1500CDCE11 /* mushroomTests */,
+				E994681A23320A1500CDCE11 /* mushroomUITests */,
+				E99467F923320A1400CDCE11 /* Products */,
+				514C50D8BA57330EA070EE71 /* Pods */,
+				534B414DEDD3A07D1049A0F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E99467F923320A1400CDCE11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E99467F823320A1400CDCE11 /* mushroom.app */,
+				E994680C23320A1500CDCE11 /* mushroomTests.xctest */,
+				E994681723320A1500CDCE11 /* mushroomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E99467FA23320A1400CDCE11 /* mushroom */ = {
+			isa = PBXGroup;
+			children = (
+				E99467FB23320A1400CDCE11 /* AppDelegate.swift */,
+				E99467FD23320A1400CDCE11 /* ViewController.swift */,
+				E99467FF23320A1400CDCE11 /* Main.storyboard */,
+				E994680223320A1500CDCE11 /* Assets.xcassets */,
+				E994680423320A1500CDCE11 /* LaunchScreen.storyboard */,
+				E994680723320A1500CDCE11 /* Info.plist */,
+			);
+			path = mushroom;
+			sourceTree = "<group>";
+		};
+		E994680F23320A1500CDCE11 /* mushroomTests */ = {
+			isa = PBXGroup;
+			children = (
+				E994681023320A1500CDCE11 /* mushroomTests.swift */,
+				E994681223320A1500CDCE11 /* Info.plist */,
+			);
+			path = mushroomTests;
+			sourceTree = "<group>";
+		};
+		E994681A23320A1500CDCE11 /* mushroomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E994681B23320A1500CDCE11 /* mushroomUITests.swift */,
+				E994681D23320A1500CDCE11 /* Info.plist */,
+			);
+			path = mushroomUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E99467F723320A1400CDCE11 /* mushroom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E994682023320A1500CDCE11 /* Build configuration list for PBXNativeTarget "mushroom" */;
+			buildPhases = (
+				87EFE531EAF557DF8355863E /* [CP] Check Pods Manifest.lock */,
+				E99467F423320A1400CDCE11 /* Sources */,
+				E99467F523320A1400CDCE11 /* Frameworks */,
+				E99467F623320A1400CDCE11 /* Resources */,
+				8FF17B41DDA78E759A6B336C /* [CP] Embed Pods Frameworks */,
+				E94EEF73234EFDC200756049 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mushroom;
+			productName = mushroom;
+			productReference = E99467F823320A1400CDCE11 /* mushroom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E994680B23320A1500CDCE11 /* mushroomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E994682323320A1500CDCE11 /* Build configuration list for PBXNativeTarget "mushroomTests" */;
+			buildPhases = (
+				313F290A71573F18A8B281F6 /* [CP] Check Pods Manifest.lock */,
+				E994680823320A1500CDCE11 /* Sources */,
+				E994680923320A1500CDCE11 /* Frameworks */,
+				E994680A23320A1500CDCE11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E994680E23320A1500CDCE11 /* PBXTargetDependency */,
+			);
+			name = mushroomTests;
+			productName = mushroomTests;
+			productReference = E994680C23320A1500CDCE11 /* mushroomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E994681623320A1500CDCE11 /* mushroomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E994682623320A1500CDCE11 /* Build configuration list for PBXNativeTarget "mushroomUITests" */;
+			buildPhases = (
+				72DDF6303F8249EF2ECF6E44 /* [CP] Check Pods Manifest.lock */,
+				E994681323320A1500CDCE11 /* Sources */,
+				E994681423320A1500CDCE11 /* Frameworks */,
+				E994681523320A1500CDCE11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E994681923320A1500CDCE11 /* PBXTargetDependency */,
+			);
+			name = mushroomUITests;
+			productName = mushroomUITests;
+			productReference = E994681723320A1500CDCE11 /* mushroomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E99467F023320A1400CDCE11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = akira;
+				TargetAttributes = {
+					E99467F723320A1400CDCE11 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					E994680B23320A1500CDCE11 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E99467F723320A1400CDCE11;
+					};
+					E994681623320A1500CDCE11 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E99467F723320A1400CDCE11;
+					};
+				};
+			};
+			buildConfigurationList = E99467F323320A1400CDCE11 /* Build configuration list for PBXProject "mushroom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E99467EF23320A1400CDCE11;
+			productRefGroup = E99467F923320A1400CDCE11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E99467F723320A1400CDCE11 /* mushroom */,
+				E994680B23320A1500CDCE11 /* mushroomTests */,
+				E994681623320A1500CDCE11 /* mushroomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E99467F623320A1400CDCE11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E994680623320A1500CDCE11 /* LaunchScreen.storyboard in Resources */,
+				E994680323320A1500CDCE11 /* Assets.xcassets in Resources */,
+				E994680123320A1400CDCE11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E994680A23320A1500CDCE11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E994681523320A1500CDCE11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		313F290A71573F18A8B281F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mushroomTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72DDF6303F8249EF2ECF6E44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mushroomUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87EFE531EAF557DF8355863E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mushroom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FF17B41DDA78E759A6B336C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mushroom/Pods-mushroom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mushroom/Pods-mushroom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mushroom/Pods-mushroom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E99467F423320A1400CDCE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99467FE23320A1400CDCE11 /* ViewController.swift in Sources */,
+				E99467FC23320A1400CDCE11 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E994680823320A1500CDCE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E994681123320A1500CDCE11 /* mushroomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E994681323320A1500CDCE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E994681C23320A1500CDCE11 /* mushroomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E994680E23320A1500CDCE11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E99467F723320A1400CDCE11 /* mushroom */;
+			targetProxy = E994680D23320A1500CDCE11 /* PBXContainerItemProxy */;
+		};
+		E994681923320A1500CDCE11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E99467F723320A1400CDCE11 /* mushroom */;
+			targetProxy = E994681823320A1500CDCE11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E99467FF23320A1400CDCE11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E994680023320A1400CDCE11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E994680423320A1500CDCE11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E994680523320A1500CDCE11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E994681E23320A1500CDCE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E994681F23320A1500CDCE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E994682123320A1500CDCE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF66138C93EBE68ABE3AE4A /* Pods-mushroom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNRF28284;
+				INFOPLIST_FILE = mushroom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.thegameofakira;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E994682223320A1500CDCE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0050D2ED064C5D208BA7572F /* Pods-mushroom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNRF28284;
+				INFOPLIST_FILE = mushroom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.thegameofakira;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E994682423320A1500CDCE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DDC156DFC7014ACAFD59A9F /* Pods-mushroomTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNRF28284;
+				INFOPLIST_FILE = mushroomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akira.mushroomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mushroom.app/mushroom";
+			};
+			name = Debug;
+		};
+		E994682523320A1500CDCE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06E718DAB6588929622674DF /* Pods-mushroomTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNRF28284;
+				INFOPLIST_FILE = mushroomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akira.mushroomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mushroom.app/mushroom";
+			};
+			name = Release;
+		};
+		E994682723320A1500CDCE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56714B33621FE1FA1602C404 /* Pods-mushroomUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNRF28284;
+				INFOPLIST_FILE = mushroomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akira.mushroomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mushroom;
+			};
+			name = Debug;
+		};
+		E994682823320A1500CDCE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0A33DDC4482B75ED0BD40A /* Pods-mushroomUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNRF28284;
+				INFOPLIST_FILE = mushroomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = akira.mushroomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mushroom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E99467F323320A1400CDCE11 /* Build configuration list for PBXProject "mushroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E994681E23320A1500CDCE11 /* Debug */,
+				E994681F23320A1500CDCE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E994682023320A1500CDCE11 /* Build configuration list for PBXNativeTarget "mushroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E994682123320A1500CDCE11 /* Debug */,
+				E994682223320A1500CDCE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E994682323320A1500CDCE11 /* Build configuration list for PBXNativeTarget "mushroomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E994682423320A1500CDCE11 /* Debug */,
+				E994682523320A1500CDCE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E994682623320A1500CDCE11 /* Build configuration list for PBXNativeTarget "mushroomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E994682723320A1500CDCE11 /* Debug */,
+				E994682823320A1500CDCE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E99467F023320A1400CDCE11 /* Project object */;
+}

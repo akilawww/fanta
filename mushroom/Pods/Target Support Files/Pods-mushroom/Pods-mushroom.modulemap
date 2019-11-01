@@ -1,0 +1,6 @@
+framework module Pods_mushroom {
+  umbrella header "Pods-mushroom-umbrella.h"
+
+  export *
+  module * { export * }
+}
